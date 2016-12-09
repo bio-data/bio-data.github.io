@@ -92,6 +92,16 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 38px;
   margin-top: 20px;
+text-align: center;
+/* margin-left: 640px;*/
+/*    text-shadow: 0px 0px 1px #ec8929*/
+}
+
+hc {
+ position: fixed;
+  font-size: 30px;
+  margin-top: 10px;
+    margin-left: 600px;
 /*    text-shadow: 0px 0px 1px #ec8929*/
 }
 
@@ -102,15 +112,18 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
-    margin-bottom: 15px;
+  font-size: 18px;
+    margin-bottom: 25px;
+    
 }
 
 h4 {
   <!--font-style: italic;-->
   font-size: 12px;
-  margin-top:-10px;
-  margin-bottom:5px;
+  margin-top:-96px;
+  margin-bottom:-22px;
+text-align: center;
+/* margin-left: 935px*/
 }
 
 ht {
@@ -162,7 +175,16 @@ p3{
 p4{
     font-weight: bold;
     letter-spacing: 1px;
+    font-size: 15px;
 }
+
+p4c{
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:#006d78; 
+}
+
+
 
 p4a{
     font-weight: bold;
@@ -245,6 +267,8 @@ a {
 }
 
 a:hover, a:focus {border-bottom: 2px solid #444745}
+
+
 
 
 em {
@@ -373,8 +397,17 @@ hr3 {
     display:block;
     height: -15px;
     border: 10;
+    border-top: 1px solid #b3b3b3;
+    margin: 2em 0 0.2em 0;
+    padding: 0; 
+    color: #b3b3b3;  
+}
+hr8 {
+    display:block;
+    height: -15px;
+    border: 10;
     border-top: 1px dashed #b3b3b3;
-    margin: 1.5em 0;
+    margin: 2em 0 0.2em 0;
     padding: 0; 
     color: #b3b3b3;  
 }
@@ -401,18 +434,27 @@ hr5 {
     height:  5px;
     border: 0;
     border-top: 1px solid #dedede;
-    margin: 1.3em 0;
+    margin: 20px 0em 10px 1.3em;
     padding: 0; 
     color: #dedede;
     }
 
 hr6 {
     display: block;
-        border: 0;
+    border: 0;
     border-top: 1px solid #dedede;
-       padding: 0; 
-    
     color: #dedede;
+    margin: 15px 0em 0em 1.3em;
+    margin-left: -1000px;
+    }
+
+hr7 {
+   display: block;
+    width: 25px;
+    border: 0;
+    border-top: 2px solid #006d78;
+    color: #006d78;
+    margin: 1em 0em 0.5em 0em;
     }
 
 div.horizontalgap{float:left;overflow:hidden;height:1px;width:0px;}
@@ -451,11 +493,20 @@ Full-Width Styles
 .foto {
   position: absolute;
     left: 50px;
-    top: 115px;
+    top: 140px;
     z-index: 10;
     border: 0;
 }
 
+.foto2 {
+  position: fixed;
+    left: 1390px;
+    top: 35px;
+    z-index: 1000;
+    border: 0;
+    width: 240px; /* you can use % */
+    height: auto;
+}
 /*.inner {
   position: relative;
   max-width: 800px;
@@ -464,6 +515,14 @@ Full-Width Styles
   margin-bottom: -40px;
 }*/
 
+
+
+.inner14 {
+  position: static;
+margin-top: 0px;
+    margin-left:-5px;
+    margin-bottom: -26px;
+}
 
 
 .inner3 {
@@ -483,10 +542,9 @@ margin-top: -40px
 }
 
 .inner6 {
-  position: relative;
+  position: fixed;
   max-width: 800px;
   padding: 10px 0px 5px 0px;
-  margin: 0 auto;
 margin-top: -60px
 }
 
@@ -509,7 +567,7 @@ z-index: 1;
 .inner6 {
   position: relative;
     padding-right: 170px;
-    left: -180px;
+    left: -200px;
   max-width: 100%;
   margin: 0 auto;
   top:-15px;
@@ -521,7 +579,7 @@ z-index: 1;
   max-width: 800px;
   padding: 0px  50px;
   margin: 0 auto;
-margin-top: 80px;
+margin-top: 50px;
     margin-bottom: 100px;
     min-height: 680px;
 }
@@ -531,7 +589,7 @@ margin-top: 80px;
   max-width: 800px;
   padding: 0px  50px;
   margin: 0 auto;
-margin-top: 80px;
+margin-top: 50px;
     margin-bottom: 100px;
     min-height:1000px;
 }
@@ -548,7 +606,7 @@ margin-top: 80px;
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-    right: 480px;
+    right: 200px;
 }
 
 .inner11 {
@@ -586,31 +644,30 @@ margin-top: -40px
 
 #contato1 {
     position: fixed;
-    top:30px;
-    right: 265px;
+    top: 65px;
+    right: 120px;
     background-color: white;
     width: 200px;
     border: 2px solid #006d78;
     padding: 10px;
     margin: 1px;
-     color: #006d78;
+    color: #006d78;
     font-size: 14px;
     font-weight: bold;
 }
 
 img {
-    position: fixed;
-    left: 180px;
-    top: 15px;
+    position:static;
+    top: 0px;
     z-index: 1000;
     border: 0;
 
 }
 
-.img2 {
+img2 {
     position: fixed;
     left: 130px;
-    top: 10px;
+    top: 20px;
     z-index: 1000;
     border: 0;
 
@@ -635,10 +692,13 @@ div.img img {
   position: fixed;
   width: 100%;
    margin: 0;
-  padding-left: 280px;
+  left: 0px;
   top: 0px;
   
   }
+
+
+
 
 header {
     position: fixed;
@@ -687,64 +747,5 @@ header {
 
 #footer_wrap {
   background: #4f7177;
-}
-
-
-/*******************************************************************************
-Small Device Styles
-*******************************************************************************/
-
-@media screen and (max-width: 480px) {
-  body {
-    font-size:14px;
-  }
-
-  #downloads {
-    display: none;
-  }
-
-  .inner {
-   padding-right: 210px;
-      top: 10px;
-  max-width: 100%;
-  }
-    
-
-  #project_title {
-  font-size: 32px;
-  }
-
-  h1 {
-    font-size: 32px;
-      margin-right:  60px;
-  }
-
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    padding-top: 5px;
-    font-size: 21px;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  h5 {
-    font-size: 14px;
-  }
-
-  h6 {
-    font-size: 12px;
-  }
-
-  code, pre {
-    min-width: 320px;
-    max-width: 480px;
-    font-size: 11px;
-  }
-
 }
 
